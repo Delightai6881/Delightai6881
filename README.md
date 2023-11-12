@@ -43,3 +43,11 @@ links = ["https://x.com/DelightAi6881/status/1722090000039170448?s==1:UA7020H570
 for link in links:
     # Відкриваємо посилання в новій вкладці браузера
     webbrowser.open_new_tab(link)
+github.com https://bingapp.microsoft.com/Bing https://platform.openai.com/signup_ext?app=chat with xai.cx/gpt O:CN 70 20H5 70?8B0==O. 8 ?>?@>A8;8 <5=5 @>7?>2VAB8 4>:;04=VH5 ?@> 465@5;0, O:V O 28:>@8AB02 4;O 2V4?>2V4V =0 20H5 ?>?5@54=T 70?8B0==O ?@> Bing Copilot chat gpt-4, gpt-3 B0 xai.cx gpt Grok premium +. AL :>@>B:89 >?8A :>6=>3> 465@5;0:
+
+[blogs.bing.com] - F5 >DVFV9=89 1;>3 Bing, 45 2>=8 ?C1;V:CNBL =>28=8, >3;O48, ?>@048 B0 V=HC V=D>@<0FVN ?@> A2>W ?@>4C:B8 B0 A5@2VA8. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO ?@> 70?CA: Bing Copilot chat gpt-4 B0 9>3> >A>1;82>ABV.
+[howtogeek.com] - F5 251-A09B, O:89 ?@>?>=CT ?@0:B8G=V ?>@048, ?>OA=5==O B0 >3;O48 7 B5E=>;>3V9, =0C:8 B0 3V:-:C;LBC@8. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO, O: 28:>@8AB>2C20B8 Bing Copilot chat gpt-4 C 1@0C75@V Edge.
+[windowslatest.com] - F5 251-A09B, O:89 ?C1;V:CT >AB0==V =>28=8, >=>2;5==O B0 0=0;VB8:C ?@> Windows, Microsoft B0 ?>2O70=V B5<8. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO, O: 28:>@8AB>2C20B8 Bing Copilot chat gpt-4 C Skype.
+[play.google.com] - F5 >DVFV9=89 <03078= 4>40B:V2 Google 4;O Android-?@8AB@>W2. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO, O: 7020=B068B8 B0 2AB0=>28B8 <>1V;L=89 4>40B>: Bing, O:89 B0:>6 <0T DC=:FVN Bing Copilot chat gpt-4.
+[zapier.com] - F5 251-A5@2VA, O:89 4>72>;OT 02B><0B87C20B8 @>1>GV ?@>F5A8 <V6 @V7=8<8 >=;09=-4>40B:0<8 B0 A5@2VA0<8. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO ?@> 5:A?5@8<5=B0;L=C DC=:FVN Bing Copilot chat gpt-3, O:0 1C;0 4>ABC?=0 4;O >1<565=>W :V;L:>ABV :>@8ABC20GV2 C 2022 @>FV.
+!?>4V20NAO, I> FO V=D>@<0FVO 1C;0 :>@8A=>N 4;O 20A. /:I> C 20A T I5 O:VAL 70?8B0==O, 1C4L ;0A:0, 7040209B5=1048:UA7020H570?8B0. https://fullai.substack.com/p/17a6cc19-3c23-4627-913c-eafecdf0b830 https://open.substack.com/pub/fullai/p/coming-soon?r=306zt8&utm_campaign=post&utm_medium=web Grok.x.ai x.ai 
