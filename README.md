@@ -51,3 +51,14 @@ github.com https://bingapp.microsoft.com/Bing https://platform.openai.com/signup
 [play.google.com] - F5 >DVFV9=89 <03078= 4>40B:V2 Google 4;O Android-?@8AB@>W2. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO, O: 7020=B068B8 B0 2AB0=>28B8 <>1V;L=89 4>40B>: Bing, O:89 B0:>6 <0T DC=:FVN Bing Copilot chat gpt-4.
 [zapier.com] - F5 251-A5@2VA, O:89 4>72>;OT 02B><0B87C20B8 @>1>GV ?@>F5A8 <V6 @V7=8<8 >=;09=-4>40B:0<8 B0 A5@2VA0<8. / 28:>@8AB02 F5 465@5;>, I>1 4V7=0B8AO ?@> 5:A?5@8<5=B0;L=C DC=:FVN Bing Copilot chat gpt-3, O:0 1C;0 4>ABC?=0 4;O >1<565=>W :V;L:>ABV :>@8ABC20GV2 C 2022 @>FV.
 !?>4V20NAO, I> FO V=D>@<0FVO 1C;0 :>@8A=>N 4;O 20A. /:I> C 20A T I5 O:VAL 70?8B0==O, 1C4L ;0A:0, 7040209B5=1048:UA7020H570?8B0. https://fullai.substack.com/p/17a6cc19-3c23-4627-913c-eafecdf0b830 https://open.substack.com/pub/fullai/p/coming-soon?r=306zt8&utm_campaign=post&utm_medium=web Grok.x.ai x.ai 
+Spaces2.
+#FullAI https://x.com/DelightAi6881/status/1723488894237159909?s=1048
+Докладніше:
+
+1. status.epicgames.com
+2. github.com
+3. x.com
+4. twitter.com
+5. t.co
+   
+
