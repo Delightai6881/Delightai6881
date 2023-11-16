@@ -151,3 +151,4 @@ https://x.com/DelightAi6881/status/1723488894237159909?ua=https://l.instagram.co
 (6) Виправлення помилок у звітності з ПДФО, ВЗ та ЄСВ. https://i.factor.ua/ukr/journals/nibu/2021/april/issue-29/article-114285.html.
 (7) Виявлення та виправлення помилок — Вікіпедія. https://uk.wikipedia.org/wiki/%D0%92%D0%B8%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D1%82%D0%B0_%D0%B2%D0%B8%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%BF%D0%BE%D0%BC%D0%B8%D0%BB%D0%BE%D0%BA.
 (8) Виявлення та виправлення помилок — Вікіпедія. https://uk.wikipedia.org/wiki/%D0%92%D0%B8%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D1%82%D0%B0_%D0%B2%D0%B8%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%BF%D0%BE%D0%BC%D0%B8%D0%BB%D0%BE%D0%BA.
+https://groups.google.com/g/firebase-talk/c/f-XdaeJMLfk
