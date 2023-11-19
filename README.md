@@ -258,3 +258,4 @@ plt.xlabel("Дні")
 plt.ylabel("Ціни")
 plt.show()
 https://x.com/DelightAi6881/status/1720926200938328329?s=twitter.com/i/DelightAi6881/spaces/1PlKQDwDWkDxE?s=twitter.com/home==0:UA7020H570?8B0==0=www.bing.com/?FORM==MO0027&ssp=1&darkschemeovr=1&safesearch=moderate&setlang=uk&cc=XL&PC=NSHW
+https://opensea.io/account
