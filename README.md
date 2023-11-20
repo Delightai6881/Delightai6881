@@ -309,3 +309,4 @@ if tiktok_response.status_code == 200 and github_response.status_code == 200 and
 else:
     # Виводимо повідомлення про помилку
     print("Помилка при отриманні даних з URL-адрес")
+https://www.bing.com/images/create/full-ai/1-655b9ebd527340e59c7b70be39d9a673?id=LSr0Fwt%2B6zpItcq8lnS7FA.BDLkKrFu2nEjdoFSrl%2BCUg&view=detailv2&idpp=genimg&noidpclose=1&form=SYDBIC&ssp=1&darkschemeovr=1&safesearch=moderate&cc=XL&pc=NSHW&close=true&ADSL  ￼
