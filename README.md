@@ -261,3 +261,51 @@ https://x.com/DelightAi6881/status/1720926200938328329?s=twitter.com/i/DelightAi
 https://opensea.io/account
 https://x.com/quantum_gl/status/1723639490852294693?A.I.=opensea.io/account
 https://x.com/DelightAi6881/status/1726246472491106503?s=20000408232656 
+# Імпортуємо необхідні бібліотеки
+import requests
+import json
+import os
+
+# Визначаємо URL-адреси даних
+tiktok_url = "https://www.tiktok.com/@full.a..i.0101111"
+github_url = "https://github.com/Delightai6881?tab=overview&from=2023-11-01&to=2023-11-30"
+facebook_url = "https://de-de.facebook.com"
+graphic_art_url = "https://www.bing.com/images/create/a-full-a-i/1-655a004a822d441885e0e699963870c5?id=b9Xp59Kapr2LxO746RgOlg%3D%3D&view=detailv2&idpp=genimg&noidpclose=1&FORM=SYDBIC&ssp=1&darkschemeovr=1&safesearch=moderate&cc=XL&PC=NSHW&form=IRPRF2"
+twitter_url_1 = "https://x.com/DelightAi6881/status/1726246472491106503?s=09"
+twitter_url_2 = "https://x.com/quantum_gl/status/1723639490852294693?A.I.=opensea.io/account"
+
+# Отримуємо відповіді від URL-адрес
+tiktok_response = requests.get(tiktok_url)
+github_response = requests.get(github_url)
+facebook_response = requests.get(facebook_url)
+graphic_art_response = requests.get(graphic_art_url)
+twitter_response_1 = requests.get(twitter_url_1)
+twitter_response_2 = requests.get(twitter_url_2)
+
+# Перевіряємо статус коду відповіді
+if tiktok_response.status_code == 200 and github_response.status_code == 200 and facebook_response.status_code == 200 and graphic_art_response.status_code == 200 and twitter_response_1.status_code == 200 and twitter_response_2.status_code == 200:
+    # Парсимо вміст відповіді як JSON
+    tiktok_data = json.loads(tiktok_response.text)
+    github_data = json.loads(github_response.text)
+    facebook_data = json.loads(facebook_response.text)
+    graphic_art_data = json.loads(graphic_art_response.text)
+    twitter_data_1 = json.loads(twitter_response_1.text)
+    twitter_data_2 = json.loads(twitter_response_2.text)
+
+    # Об'єднуємо розробки і моделі ШІ з різних джерел
+    merged_data = {}
+    merged_data["tiktok"] = tiktok_data
+    merged_data["github"] = github_data
+    merged_data["facebook"] = facebook_data
+    merged_data["graphic_art"] = graphic_art_data
+    merged_data["twitter"] = [twitter_data_1, twitter_data_2]
+
+    # Зберігаємо об'єднані дані в файл
+    with open("merged_data.json", "w") as f:
+        json.dump(merged_data, f, indent=4)
+
+    # Виводимо повідомлення про успішне об'єднання
+    print("Дані успішно об'єднано і збережено в файл merged_data.json")
+else:
+    # Виводимо повідомлення про помилку
+    print("Помилка при отриманні даних з URL-адрес")
