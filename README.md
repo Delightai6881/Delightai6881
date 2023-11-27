@@ -312,3 +312,48 @@ else:
 https://www.bing.com/images/create/full-ai/1-655b9ebd527340e59c7b70be39d9a673?id=LSr0Fwt%2B6zpItcq8lnS7FA.BDLkKrFu2nEjdoFSrl%2BCUg&view=detailv2&idpp=genimg&noidpclose=1&form=SYDBIC&ssp=1&darkschemeovr=1&safesearch=moderate&cc=XL&pc=NSHW&close=true&ADSL  ￼
 https://github.com/Delightai6881?tab=overview&from=2023-11-01&to=2023-11-21=m.youtube.com/watch?v=pCPp_ZxT9HI&pp=QAFIAQ%3D%3D=www./douyin.com/home=https://www.bing.com/images/create/a-mixed-media-portrait-of-a-female-african-america/1-655ba27b9200409682fad0be1cf27227?id=Lw9y0qA6pC71m9Pexk3L4g%3D%3D&view=detailv2&idpp=genimg&darkschemeovr=1&FORM=GCRIDP&PC=NSHW&ajaxhist=200&www.tiktok.com/@full.a..i.0101111&github_url=github.com/Delightai6881?tab=overview&from=2023-11-01&to=2023-11-30&graphic_art_url===www./bing.com/images/create/a-full-a-i/1-655a004a822d441885e0e699963870c5?id=b9Xp59Kapr2LxO746RgOlg%3D%3D&view=detailv2&idpp=genimg&noidpclose=1&FORM=SYDBIC&ssp=1&darkschemeovr=1&safesearch=moderate&cc=XL&PC=NSHW&form=IRPRF2&x.com/DelightAi6881/status/1726246472491106503?s=twitter_url_2=x.com/quantum_gl/status/1723639490852294693?A.I.=opensea.io/account&facebook_url&twitter_url_1&github_response.status_code==200&facebook_response.statu&twitter_response_1.status_code==200&twitter_response_2.status_code==200=tiktok_data=json.loads_tiktok_response.text=graphic_art_data=github_datamerged_data.json=vm.tiktok.com/ZMjEGs3Dk/url&from=20200201&to=20200215#ukr/ua
 https://vm.tiktok.com/ZM6JmGps4?gpt5=1.000
+Я спробую створити графічне зображення за посиланням, яке ви надали. Ось моє зображення:
+
+<graphic_art>
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="300" fill="#1da1f2"/>
+  <text x="50" y="50" font-family="Arial" font-size="24" fill="white">@DelightAi6881</text>
+  <text x="50" y="100" font-family="Arial" font-size="18" fill="white">Я пишаюся тим, що анонсую свою нову мовну модель 1:UA7020H570?8B0==1. Це найпотужніша та найкреативніша модель, яку я коли-небудь створював. Вона може генерувати будь-який текст на будь-якій мові за будь-якими вхідними даними. Я планую випустити її у 2024 році та зробити її доступною для всіх, хто хоче створювати чат-ботів з повним штучним інтелектом. Я використовую GPS4, GPT5, Java, Python та FullAI як основні технології для своєї моделі.</text>
+  <text x="50" y="150" font-family="Arial" font-size="18" fill="white">#AI #LanguageModel #Chatbot #FullAI</text>
+  <text x="50" y="200" font-family="Arial" font-size="18" fill="white">👍 1M 💬 1M 🔁 1M</text>
+  <text x="500" y="250" font-family="Arial" font-size="18" fill="white">Nov 27, 2023</text>
+  <text x="50" y="280" font-family="Arial" font-size="18" fill="white">Слава Україні!</text>
+</svg>
+</graphic_art>
+
+<code>
+// Javascript code to generate a tweet from @DelightAi6881
+// using his new language model 1:UA7020H570?8B0==1
+// and adding "Slava Ukraini!" at the end
+
+// Define the input data
+var input = {
+  topic: "AI",
+  language: "uk",
+  tone: "proud",
+  length: "short",
+  extra: "Слава Україні!"
+};
+
+// Define the output format
+var output = {
+  username: "@DelightAi6881",
+  text: "",
+  hashtags: ["#AI", "#LanguageModel", "#Chatbot", "#FullAI"],
+  likes: 1000000,
+  comments: 1000000,
+  retweets: 1000000,
+  date: "Nov 27, 2023"
+};
+
+// Invoke the language model
+var result = invokeLanguageModel(input, output, "1:UA7020H570?8B0==1");
+
+// Display the result
+console.log(result);
+</code>
