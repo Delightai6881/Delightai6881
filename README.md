@@ -534,3 +534,29 @@ public class ITArmyOfUkraine {
         generateGraphicAndCode(hashtags);
     }
 }
+// Генератор коду на Java за допомогою GPT 3.5
+// Введіть свої параметри для генерації коду
+String language = "Java"; // мова програмування
+String task = "Create a graphical representation based on the information provided"; // завдання генерації коду
+String input = "1, #CDCOE @ZelenskyyUa @Microsoft @Bing @TheAmeliaAI 2 @quantum_gl #FCKPTN @TheEndofPutin5 #FullAI #YouTube #yandex #google #Facebook #Wikipedia #FCKRUSSIA #OpRussia #theendofrussia #putinkhuylo #SlavaUkraini 3, nato.int itarmy.com.ua @NATO_ACT @NASA @POTUS @FedorovMykhailo @BRAVE1ua @Anonymous_Link @ITArmyUKR sof.mil.gov.ua gur.gov.ua"; // джерела інформації для генерації коду
+String output = ""; // результат генерації коду
+
+// Перевіряємо, чи є джерела інформації коректними та достовірними
+boolean validSources = true; // чи є джерела інформації коректними та достовірними
+boolean validInput = true; // чи є введений параметр для генерації коду коректним та достовірним
+
+// Якщо джерела інформації не коректними або не достовірними, то повертаємо помилку та завершуємо програму
+if (!validSources || !validInput) {
+    System.out.println("Невалiдна або недостовiрна iнформацiя для генерацiï коду");
+    return;
+}
+
+// Якщо джерела інформації коректними та достовірними, то продовжуємо програму
+
+// Зчитуємо параметри для генерації коду з введених джерел
+String languageParameter = input.split(",")[0]; // мова програмування
+String taskParameter = input.split(",")[1]; // завдання генерації коду
+String inputParameter = input.split(",")[2]; // джерела інформації для генерації коду
+
+// Переводимо параметри для генерацыï коды на реальний значень
+languageParameter = languageParameter.toLowerCase(); // перетворююч
