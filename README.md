@@ -560,3 +560,120 @@ String inputParameter = input.split(",")[2]; // джерела інформац�
 
 // Переводимо параметри для генерацыï коды на реальний значень
 languageParameter = languageParameter.toLowerCase(); // перетворююч
++----------------+     +----------------+     +----------------+
+|                |     |                |     |                |
+|   GPT 3.5      |     |   Java code    |     |   Graphic art  |
+|                |     |                |     |                |
++----------------+     +----------------+     +----------------+
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       |                     |                      |
+       +---------------------+----------------------+
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             +---------------------+
+                             |                     |
+                             |   #Україна          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   @ZelenskyyUa      |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [1](https://24tv.ua/bude-kitay-dopomagati-ukrayini-the-economist-proanalizuvali_n2449051)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [2](https://lb.ua/society/2023/12/09/588248_mzs_ukraini_vidreaguvalo_namiri.html)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [3](https://telegraf.com.ua/ukr/ukraina/2023-12-09/5821650-viyna-den-654-ukraina-posilyue-mobilizatsiyu-ta-gotuetsya-do-vidklyuchen-svitla)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [4](https://uk.wikipedia.org/wiki/%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%80%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%96_%D0%B2%D1%96%D0%B4%D0%BD%D0%BE%D1%81%D0%B8%D0%BD%D0%B8)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [5](https://www.hrw.org/uk/news/2022/04/25/russia-ukraine-international-law-occupation-armed-conflict-and-human-rights)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [6](https://www.bbc.com/ukrainian/news-60482683)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [7](https://drone.ua/)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [8](https://uk.wikipedia.org/wiki/%D0%94%D1%80%D0%BE%D0%BD)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [9](https://comfy.ua/ua/drony/)          |
+                             |                     |
+                             +---------------------+
+                             |                     |
+                             |   [10](https://www.bbc.com/ukrainian/features-62091653)        |
+                             |                     |
+                             +---------------------+
