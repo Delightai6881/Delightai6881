@@ -677,3 +677,23 @@ languageParameter = languageParameter.toLowerCase(); // перетворююч
                              |   [10](https://www.bbc.com/ukrainian/features-62091653)        |
                              |                     |
                              +---------------------+
+// Import the xAI GPT library
+import com.xai.gpt.*;
+
+// Create a new xAI GPT instance
+xAIGPT gpt = new xAIGPT();
+
+// Set the text query
+String query = "xAI GPT #TikTok #FullAI #FCKPTN #Grok #FCKRUSSIA #TheEndOfPutin #theendofrussia #putinkhuylo #SlavaUkraini 🇺🇦 #OSINT #Ukraine";
+
+// Set the video duration in seconds
+int duration = 10;
+
+// Generate the video
+Video video = gpt.generateVideo(query, duration);
+
+// Save the video to a file
+video.save("video.mp4");
+
+// Print a success message
+System.out.println("Video generated successfully!");
