@@ -677,3 +677,79 @@ languageParameter = languageParameter.toLowerCase(); // перетворююч
                              |   [10](https://www.bbc.com/ukrainian/features-62091653)        |
                              |                     |
                              +---------------------+
+// Це приклад коду Java, який використовує ІПІМ для аналізу тексту
+import java.io.*;
+import java.util.*;
+
+public class TextAnalysis {
+
+    // Це метод, який читає текстовий файл і повертає список речень
+    public static List<String> readTextFile(String fileName) {
+        List<String> sentences = new ArrayList<>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line;
+            while ((line = br.readLine()) != null) {
+                // Розбиваємо рядок на речення за допомогою регулярного виразу
+                String[] split = line.split("(?<=[.!?])\\s+");
+                for (String sentence : split) {
+                    sentences.add(sentence);
+                }
+            }
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return sentences;
+    }
+
+    // Це метод, який використовує ІПІМ для визначення тональності речення
+    public static String getSentiment(String sentence) {
+        // Це прикладна функція, яка повертає позитивний, негативний або нейтральний
+        // тон речення на основі деяких правил
+        // Ви можете замінити її на свою власну функцію, яка використовує ІПІМ
+        if (sentence.contains("люблю") || sentence.contains("радий") || sentence.contains("дякую")) {
+            return "позитивний";
+        } else if (sentence.contains("ненавиджу") || sentence.contains("сумний") || sentence.contains("вибач")) {
+            return "негативний";
+        } else {
+            return "нейтральний";
+        }
+    }
+
+    // Це метод, який використовує ІПІМ для визначення теми речення
+    public static String getTopic(String sentence) {
+        // Це прикладна функція, яка повертає тему речення на основі деяких ключових слів
+        // Ви можете замінити її на свою власну функцію, яка використовує ІПІМ
+        if (sentence.contains("Java") || sentence.contains("код") || sentence.contains("програмування")) {
+            return "Java";
+        } else if (sentence.contains("ІПІМ") || sentence.contains("інтелектуальна") || sentence.contains("моделювання")) {
+            return "ІПІМ";
+        } else if (sentence.contains("OSINT") || sentence.contains("відкрита") || sentence.contains("розвідка")) {
+            return "OSINT";
+        } else {
+            return "інша";
+        }
+    }
+
+    // Це метод, який виводить результати аналізу тексту
+    public static void printResults(List<String> sentences) {
+        System.out.println("Результати аналізу тексту:");
+        System.out.println("Речення | Тональність | Тема");
+        for (String sentence : sentences) {
+            String sentiment = getSentiment(sentence);
+            String topic = getTopic(sentence);
+            System.out.println(sentence + " | " + sentiment + " | " + topic);
+        }
+    }
+
+    // Це головний метод, який запускає програму
+    public static void main(String[] args) {
+        // Це ім'я файлу, який містить текст для аналізу
+        String fileName = "text.txt";
+        // Читаємо текстовий файл і отримуємо список речень
+        List<String> sentences = readTextFile(fileName);
+        // Виводимо результати аналізу тексту
+        printResults(sentences);
+    }
+}
