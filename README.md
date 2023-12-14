@@ -753,3 +753,46 @@ public class TextAnalysis {
         printResults(sentences);
     }
 }
+// Це метод, який перетворює повідомлення в двійковий код
+public static String toBinary(String message) {
+  // Це прикладна функція, яка використовує ІПІМ для кодування повідомлення
+  // Ви можете замінити її на свою власну функцію, яка використовує ІПІМ
+  StringBuilder binary = new StringBuilder();
+  for (char c : message.toCharArray()) {
+    binary.append(Integer.toBinaryString(c)).append(" ");
+  }
+  return binary.toString();
+}
+
+// Це метод, який перетворює двійковий код в повідомлення
+public static String fromBinary(String binary) {
+  // Це прикладна функція, яка використовує ІПІМ для декодування повідомлення
+  // Ви можете замінити її на свою власну функцію, яка використовує ІПІМ
+  StringBuilder message = new StringBuilder();
+  for (String s : binary.split(" ")) {
+    message.append((char) Integer.parseInt(s, 2));
+  }
+  return message.toString();
+}
+
+// Це метод, який використовує ІПІМ для аналізу повідомлень
+public static void analyzeMessages(List messages) {
+  System.out.println("Результати аналізу повідомлень:");
+  System.out.println("Повідомлення | Тональність | Тема | Двійковий код");
+  for (String message : messages) {
+    String sentiment = getSentiment(message);
+    String topic = getTopic(message);
+    String binary = toBinary(message);
+    System.out.println(message + " | " + sentiment + " | " + topic + " | " + binary);
+  }
+}
+
+// Це головний метод, який запускає програму
+public static void main(String[] args) {
+  // Це ім'я файлу, який містить повідомлення для аналізу
+  String fileName = "messages.txt";
+  // Читаємо текстовий файл і отримуємо список повідомлень
+  List messages = readTextFile(fileName);
+  // Виводимо результати аналізу повідомлень
+  analyzeMessages(messages);
+}
