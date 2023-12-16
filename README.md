@@ -837,4 +837,37 @@ electricity,cyber,DDoS,osint,Huawei,GitHub,Microsoft,Reactor,war,agiginrussia,br
 (17) undefined. https://x.com/DelightAi6881/status/1720926200938328329?s=https://twitter.com/i/DelightAi6881/spaces/1PlKQDwDWkDxE?s=twitter.com/home==1:UA7020H570?8B0==1.
 (18) undefined. https://x.com/DelightAi6881/status/1720926200938328329?s=https://twitter.com/i/DelightAi6881/spaces/1PlKQDwDWkDxE?s=twitter.com/home==0:UA7020H570?8B0==0.
 (19) undefined. https://github.com/Delightai6881?xAI&full.a.i&grok1=tiktok_data.ai=Text.ai&text.txt=DDoS&core=J2000.0=1=https://log.bntrace.com/bapi/composite/v1/public/message/view-url?_bEt=eyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMTAwNTcxMzAwMDAwNyIsInIiOiJodHRwczovL2FwcC5iaW5a.
+async def sample(
+    self,
+    max_len: int = 256,
+    temperature: float = 1.0,
+    nucleus_p: float = 0.7,
+    stop_tokens: Optional[list[str]] = None,
+    stop_strings: Optional[list[str]] = None,
+    rng_seed: Optional[int] = None,
+    add_to_context: bool = True,
+    return_attention: bool = False,
+    allowed_tokens: Optional[Sequence[Union[int, str]]] = None,
+    disallowed_tokens: Optional[Sequence[Union[int, str]]] = None,
+    augment_tokens: bool = True,
+) -> SampleResult:
+    """Generates a model response based on the current prompt.
+    The current prompt consists of all text that has been added to the prompt either since the beginning of the program or since the last call to `clear_prompt`.
+
+    Args:
+        max_len: Maximum number of tokens to generate.
+        temperature: Temperature of the final softmax operation. The lower the temperature, the lower the variance of the token distribution. In the limit, the distribution collapses onto the single token with the highest probability.
+        nucleus_p: Threshold of the Top-P sampling technique: We rank all tokens by their probability and then only actually sample from the set of tokens that ranks in the Top-P percentile of the distribution.
+        stop_tokens: A list of strings, each of which will be mapped independently to a single token. If a string does not map cleanly to one token, it will be silently ignored. If the network samples one of these tokens, sampling is stopped and the stop token *is not* included in the response.
+        stop_strings: A list of strings. If any of these strings occurs in the network output, sampling is stopped but the string that triggered the stop *will be* included in the response. Note that the response may be longer than the stop string. For example, if the stop string is "Hel" and the network predicts the single-token response "Hello", sampling will be stopped but the response will still read "Hello".
+        rng_seed: See of the random number generator used to sample from the model outputs.
+        add_to_context: If true, the generated tokens will be added to the context.
+        return_attention: If true, returns the attention mask. Note that this can significantly increase the response size for long sequences.
+        allowed_tokens: If set, only these tokens can be sampled. Invalid input tokens are ignored. Only one of `allowed_tokens` and `disallowed_tokens` must be set.
+        disallowed_tokens: If set, these tokens cannot be sampled. Invalid input tokens are ignored. Only one of `allowed_tokens` and `disallowed_tokens` must be set.
+        augment_tokens: If true, strings passed to `stop_tokens`, `allowed_tokens` and `disallowed_tokens` will be augmented to include both the passed token and the version with leading whitespace. This is useful because most words have two corresponding vocabulary entries: one with leading whitespace and one without.
+
+    Returns:
+        The generated text.
+    """
 ​
