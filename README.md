@@ -870,4 +870,25 @@ async def sample(
     Returns:
         The generated text.
     """
-​
+import com.x.DelightAi6881.JavaFullAI;
+
+public class SampleJavaFullAIProgram {
+public static void main(String[] args) {
+// Ініціалізація JavaFullAI
+JavaFullAI jai = new JavaFullAI();
+
+// Ініціалізувати морфологічний аналізатор
+jai.initMorphologyAnalyzer();
+
+// Ініціалізувати аналітику та класифікації
+jai.initAnalyticsAndClassification();
+
+// Використати аналітику та класифікацію для обробки даних
+jai.processData();
+
+// Використати морфологічний аналізатор для обробки речень та виявлення семантичних структур
+jai.processSentences();
+}
+}​
+
+©​
