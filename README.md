@@ -870,4 +870,24 @@ async def sample(
     Returns:
         The generated text.
     """
+// Import the OpenAI API library
+import com.openai.api.*;
+
+// Create an instance of the OpenAI API client
+OpenAI api = new OpenAI("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
+// Generate text using GPT-3
+String text = api.generateText("Write a short story about a dragon and a knight", 200);
+
+// Generate an image using DALL·E 3
+Image image = api.generateImage("a dragon and a knight", 256, 256);
+
+// Generate a plot using Matplotlib
+Plot plot = api.generatePlot("Plot the frequency of the word 'dragon' in the text", text);
+
+// Generate a graphic using Processing
+Graphic graphic = api.generateGraphic("Create a graphic that shows the relationship between the dragon and the knight", 500, 500);
+
+// Generate a synergy using FullAI
+Synergy synergy = api.generateSynergy("Create a synergy that combines the text, the image, the plot and the graphic", text, image, plot, graphic);
 ​
