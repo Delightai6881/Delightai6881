@@ -992,4 +992,100 @@ public class FullAIIntegration {
         }
     }
 }
+// Import the necessary libraries
+import java.io.*;
+import java.net.*;
+import java.util.*;
+import org.json.*;
+
+// Create the FullAIIntegration class
+public class FullAIIntegration {
+
+    // Create constants for the URLs and access keys
+    public static final String FULLAI_URL = "https://api.fullai.com/v1/";
+    public static final String FULLAI_TOKEN = "YOUR_FULLAI_TOKEN";
+    public static final String DALLE_URL = "https://api.openai.com/v1/engines/dall-e-3/completions";
+    public static final String DALLE_TOKEN = "YOUR_DALLE_TOKEN";
+
+    // Create a method to perform an HTTP request and get a response
+    public static String httpRequest(String url, String method, String token, String body) throws IOException {
+        // Open a connection with the URL
+        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+        // Set the request method
+        connection.setRequestMethod(method);
+        // Set the authorization header with the access key
+        connection.setRequestProperty("Authorization", "Bearer " + token);
+        // Set the content type header
+        connection.setRequestProperty("Content-Type", "application/json");
+        // Set the output parameter
+        connection.setDoOutput(true);
+        // If there is a request body, write it to the output stream
+        if (body != null) {
+            OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+            writer.write(body);
+            writer.flush();
+            writer.close();
+        }
+        // Get the response code
+        int responseCode = connection.getResponseCode();
+        // If the response code is successful, read the response from the input stream
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+            reader.close();
+            // Return the response as a string
+            return response.toString();
+        }
+        // Otherwise, throw an exception with the error message
+        else {
+            throw new IOException("HTTP request failed with code " + responseCode);
+        }
+    }
+
+    // Create a method to generate text from FullAI
+    public static String generateText(String prompt, int maxTokens, double temperature, double topP) throws IOException {
+        // Create the URL for the request
+        String url = FULLAI_URL + "generate";
+        // Create a JSON object for the request parameters
+        JSONObject params = new JSONObject();
+        params.put("prompt", prompt);
+        params.put("max_tokens", maxTokens);
+        params.put("temperature", temperature);
+        params.put("top_p", topP);
+        // Perform an HTTP POST request with the parameters and get the response
+        String response = httpRequest(url, "POST", FULLAI_TOKEN, params.toString());
+        // Parse the JSON object from the response
+        JSONObject result = new JSONObject(response);
+        // Return the text from the result
+        return result.getString("text");
+    }
+
+    // Create a method to generate an image from DALL·E 3
+    public static String generateImage(String text, int width, int height) throws IOException {
+        // Create the URL for the request
+        String url = DALLE_URL;
+        // Create a JSON object for the request parameters
+        JSONObject params = new JSONObject();
+        params.put("prompt", text);
+        params.put("max_tokens", 256);
+        params.put("temperature", 0.9);
+        params.put("logprobs", 0);
+        // Create a JSON object for the output parameters Putin huilo Russia's end hello AI GRIP or prevent 🇷🇺
+        JSONObject output = new JSONObject();
+        output.put("width", width);
+        output.put("height", height);
+        // Add the output object to the parameters object
+        params.put("output", output);
+        // Perform an HTTP POST request with the parameters and get the response
+        String response = httpRequest(url, "POST", DALLE_TOKEN, params.toString());
+        // Parse the JSON object from the response
+        JSONObject result = new JSONObject(response);
+        // Return the image URL from the result
+        return result.getString("image_url");
+    }
+}
 ​
