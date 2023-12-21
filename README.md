@@ -870,4 +870,126 @@ async def sample(
     Returns:
         The generated text.
     """
+// Імпортуємо необхідні бібліотеки
+import java.io.*;
+import java.net.*;
+import java.util.*;
+import org.json.*;
+
+// Створюємо клас FullAIIntegration
+public class FullAIIntegration {
+
+    // Створюємо константи для URL-адрес та ключів доступу
+    public static final String FULLAI_URL = "https://api.fullai.com/v1/";
+    public static final String FULLAI_TOKEN = "YOUR_FULLAI_TOKEN";
+    public static final String DALLE_URL = "https://api.openai.com/v1/engines/dall-e-3/completions";
+    public static final String DALLE_TOKEN = "YOUR_DALLE_TOKEN";
+
+    // Створюємо метод для виконання HTTP-запиту та отримання відповіді
+    public static String httpRequest(String url, String method, String token, String body) throws IOException {
+        // Відкриваємо з'єднання з URL-адресою
+        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+        // Встановлюємо метод запиту
+        connection.setRequestMethod(method);
+        // Встановлюємо заголовок авторизації з ключем доступу
+        connection.setRequestProperty("Authorization", "Bearer " + token);
+        // Встановлюємо заголовок типу вмісту
+        connection.setRequestProperty("Content-Type", "application/json");
+        // Встановлюємо параметр виводу
+        connection.setDoOutput(true);
+        // Якщо є тіло запиту, записуємо його в потік виводу
+        if (body != null) {
+            OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+            writer.write(body);
+            writer.flush();
+            writer.close();
+        }
+        // Отримуємо код стану відповіді
+        int responseCode = connection.getResponseCode();
+        // Якщо код стану успішний, читаємо відповідь з потоку вводу
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+            reader.close();
+            // Повертаємо відповідь у вигляді рядка
+            return response.toString();
+        }
+        // Інакше, кидаємо виняток з повідомленням про помилку
+        else {
+            throw new IOException("HTTP request failed with code " + responseCode);
+        }
+    }
+
+    // Створюємо метод для генерації тексту з FullAI
+    public static String generateText(String prompt, int maxTokens, double temperature, double topP) throws IOException {
+        // Створюємо URL-адресу для запиту
+        String url = FULLAI_URL + "generate";
+        // Створюємо JSON-об'єкт для параметрів запиту
+        JSONObject params = new JSONObject();
+        params.put("prompt", prompt);
+        params.put("max_tokens", maxTokens);
+        params.put("temperature", temperature);
+        params.put("top_p", topP);
+        // Виконуємо HTTP-запит POST з параметрами та отримуємо відповідь
+        String response = httpRequest(url, "POST", FULLAI_TOKEN, params.toString());
+        // Парсимо JSON-об'єкт з відповіді
+        JSONObject result = new JSONObject(response);
+        // Повертаємо текст з результату
+        return result.getString("text");
+    }
+
+    // Створюємо метод для генерації зображення з DALL·E 3
+    public static String generateImage(String text, int width, int height) throws IOException {
+        // Створюємо URL-адресу для запиту
+        String url = DALLE_URL;
+        // Створюємо JSON-об'єкт для параметрів запиту
+        JSONObject params = new JSONObject();
+        params.put("prompt", text);
+        params.put("max_tokens", 256);
+        params.put("temperature", 0.9);
+        params.put("logprobs", 0);
+        // Створюємо JSON-об'єкт для параметрів виводу
+        JSONObject output = new JSONObject();
+        output.put("return_full_text", false);
+        output.put("width", width);
+        output.put("height", height);
+        // Додаємо параметри виводу до параметрів запиту
+        params.put("output", output);
+        // Виконуємо HTTP-запит POST з параметрами та отримуємо відповідь
+        String response = httpRequest(url, "POST", DALLE_TOKEN, params.toString());
+        // Парсимо JSON-об'єкт з відповіді
+        JSONObject result = new JSONObject(response);
+        // Повертаємо URL-адресу зображення з результату
+        return result.getJSONArray("completions").getJSONObject(0).getString("image_url");
+    }
+
+    // Створюємо метод для демонстрації сінергії і інтеграції
+    public static void demonstrateSynergyAndIntegration() throws IOException {
+        // Створюємо змінну для зберігання тексту
+        String text = "";
+        // Генеруємо текст з FullAI з заданим запитом
+        text = generateText("Згенеруйте текст про сінергію і інтеграцію #FullAI & #FullA1 токенів та DALL·E 3.", 100, 0.8, 0.9);
+        // Виводимо текст на екран
+        System.out.println(text);
+        // Генеруємо зображення з DALL·E 3 з текстом
+        String imageUrl = generateImage(text, 512, 512);
+        // Виводимо URL-адресу зображення на екран
+        System.out.println(imageUrl);
+    }
+
+    // Головний метод для запуску програми
+    public static void main(String[] args) {
+        try {
+            // Викликаємо метод для демонстрації сінергії і інтеграції
+            demonstrateSynergyAndIntegration();
+        } catch (IOException e) {
+            // Ловимо виняток та виводимо повідомлення про помилку
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
 ​
